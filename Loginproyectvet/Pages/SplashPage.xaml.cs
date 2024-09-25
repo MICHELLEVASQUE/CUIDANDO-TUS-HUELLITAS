@@ -11,7 +11,7 @@ public partial class SplashPage : ContentPage
     {
         // Esperar 5 segundos
         await Task.Delay(10000);
-
+        
         // Navegar a la página de inicio de sesión (LoginPage)
         await Navigation.PushAsync(new LoginPage());
 
