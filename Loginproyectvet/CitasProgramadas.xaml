@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.CitasProgramadas"
+             Title="CitasProgramadas">
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="15" BackgroundColor="LightBlue">
+            <Grid>
+                <Image Source="cita.png"
+         Aspect="AspectFit"
+         HorizontalOptions="Center"
+         VerticalOptions="Center"/>
+            </Grid>
+
+            <Frame BorderColor="Gray" CornerRadius="5" HasShadow="True" Margin="0,10,0,0">
+                <StackLayout Padding="15" Spacing="10">
+                    <!-- Entrada del nombre del propietario -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Nombre:" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="EntryPropietarioNombre"
+            Placeholder="Nombre del Propietario"
+                TextColor="Black"
+               BackgroundColor="WhiteSmoke"
+                 HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+
+                    <!-- Entrada de la dirección -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Direccion" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="EntryDireccion"
+                 Placeholder="Dirección"
+                  
+                 TextColor="Black"
+                  BackgroundColor="WhiteSmoke"
+               HorizontalOptions="FillAndExpand"
+                  
+                    />
+                    </StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <!-- Entrada del teléfono -->
+                        <Label Text="Telefono" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="EntryTelefono"
+                        Placeholder="Teléfono"
+                        Keyboard="Telephone"
+                        
+                        TextColor="Black"
+                        BackgroundColor="WhiteSmoke"
+                         HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <!-- Entrada del DUI -->
+                        <Label Text="DUI" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="EntryDUI"
+                      Placeholder="DUI"
+                 Keyboard="Numeric"
+                 
+                    TextColor="Black"
+                    BackgroundColor="WhiteSmoke"
+                    HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+
+
+
+
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <!-- Entrada del nombre de la mascota -->
+                        <Label Text="Nombre de la mascota" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="EntryMascotaNombre"
+                       Placeholder="Nombre de la Mascota"
+                         
+                           TextColor="Black"
+                           BackgroundColor="WhiteSmoke"
+                           HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+
+
+
+                    <!-- Selección de la fecha -->
+                    <DatePicker x:Name="DatePickerFecha"
+              Format="D"
+              TextColor="Black"
+              BackgroundColor="WhiteSmoke"
+              HorizontalOptions="FillAndExpand"/>
+
+
+
+                    <!-- Selección de la hora -->
+                    <TimePicker x:Name="TimePickerHora"
+              Format="t"
+            
+              TextColor="Black"
+              BackgroundColor="WhiteSmoke"
+             HorizontalOptions="FillAndExpand" />
+
+
+                </StackLayout>
+            </Frame>
+            <!-- Botón de guardar -->
+            <Button Text="Guardar Cita"
+           Clicked="GuardarCitaBtn_Clicked"
+           BackgroundColor="Salmon"
+          TextColor="Black"
+          />
+
+
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

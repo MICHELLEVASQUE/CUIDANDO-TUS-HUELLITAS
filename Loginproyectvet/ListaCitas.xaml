@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.ListaCitas"
+             Title="ListaCitas">
+    <StackLayout Padding="10">
+        <ListView x:Name="listview" ItemTapped="listview_ItemTapped" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BorderColor="LightGray" CornerRadius="10" Padding="10" Margin="5" BackgroundColor="White">
+                            <StackLayout>
+                                <!-- Nombre del Propietario -->
+                                <Label Text="{Binding PropietarioNombre}" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+
+                                <!-- Nombre de la Mascota -->
+                                <Label Text="{Binding MascotaNombre, StringFormat='Mascota: {0}'}" FontSize="Small" TextColor="Gray"/>
+
+                                <!-- Fecha y Hora de la Cita -->
+                                <Label Text="{Binding FechaHora, StringFormat='Fecha y Hora: {0}'}" FontSize="Small" TextColor="Gray"/>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.Hospitalizacion"
+             Title="Hospitalizacion">
+    <ScrollView>
+        <StackLayout Padding="25" Spacing="15" BackgroundColor="#E0F7FA">
+
+
+            <Grid>
+                <Image Source="hospital.png"
+                Aspect="AspectFit"
+HorizontalOptions="Center"
+VerticalOptions="Center"/>
+            </Grid>
+
+
+            <!-- Encabezado: Datos de la Mascota -->
+
+            <Frame BorderColor="Gray" CornerRadius="5" HasShadow="True" Margin="0,10,0,0">
+                <StackLayout Padding="15" Spacing="10">
+                    <Label Text="Datos de la Mascota" FontSize="Subtitle" HorizontalOptions="Center" Margin="25"/>
+
+                    <!-- Nombre de la Mascota -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Nombre:" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="entryNombreMascota" BackgroundColor="WhiteSmoke" 
+            HorizontalOptions="FillAndExpand" Placeholder="Ingrese el nombre" />
+                    </StackLayout>
+
+                    <!-- Especie -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Especie:" VerticalOptions="Center" FontSize="Micro" TextColor="Black" />
+                        <Picker x:Name="pickerEspecie" BackgroundColor="WhiteSmoke" FontSize="Micro" HorizontalOptions="FillAndExpand">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Perro</x:String>
+                                    <x:String>Gato</x:String>
+                                    <x:String>Otro</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+
+                    <!-- Raza -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Raza:" VerticalOptions="Center" FontSize="Micro" TextColor="Black" />
+                        <Picker x:Name="pickerRaza" BackgroundColor="WhiteSmoke" FontSize="Micro" HorizontalOptions="FillAndExpand">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Husky</x:String>
+                                    <x:String>Pitbull</x:String>
+                                    <x:String>Chihuahua</x:String>
+                                    <x:String>Yorkshire Terrier</x:String>
+                                    <x:String>Pastor Aleman</x:String>
+                                    <x:String>Hosky</x:String>
+                                    <x:String>Mixtos</x:String>
+                                    <x:String>Rottweiler</x:String>
+                                    <x:String>Pomeranian</x:String>
+                                    <x:String>Siberiano</x:String>
+                                    <x:String>Hangora</x:String>
+                                    <x:String>Persa</x:String>
+                                    <x:String>Azul ruso</x:String>
+                                    <x:String>Siames</x:String>
+                                    <x:String>Tortuga de Cumberland.</x:String>
+                                    <x:String>Tortuga de orejas rojas</x:String>
+                                    <x:String>Tortuga de orejas amarillas.</x:String>
+                                    <x:String>Paloma bravía</x:String>
+                                    <x:String>Loro o cotorro</x:String>
+                                    <x:String>Perico</x:String>
+                                    <x:String>Perico Australiano</x:String>
+                                    <x:String>Cacatuas</x:String>
+                                    <x:String>Huron</x:String>
+                                    <x:String>Hamster</x:String>
+                                    <x:String>Rata blanca</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+
+                    <!-- Edad -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Edad:" VerticalOptions="Center" FontSize="Micro" TextColor="Black" />
+                        <Entry x:Name="entryEdad" BackgroundColor="WhiteSmoke" Keyboard="Numeric" MaxLength="2" Placeholder="Ej. 4"
+            FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <!-- Peso -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Peso (kg):" VerticalOptions="Center" FontSize="Micro" TextColor="Black" />
+                        <Entry x:Name="entryPeso" BackgroundColor="WhiteSmoke" Keyboard="Numeric" MaxLength="5" Placeholder="Ej. 12.5"
+            FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <!-- Estado de Hospitalización -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Estado:" VerticalOptions="Center" FontSize="Micro" TextColor="Black" />
+                        <Picker x:Name="pickerEstado" BackgroundColor="WhiteSmoke" FontSize="Micro" HorizontalOptions="FillAndExpand">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>En Observación</x:String>
+                                    <x:String>En Tratamiento</x:String>
+                                    <x:String>En Recuperación</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+
+
+
+            <Frame BorderColor="Gray" CornerRadius="5" HasShadow="True" Margin="0,10,0,0">
+                <StackLayout Padding="10" Spacing="10">
+                    <!-- Encabezado: Datos del Propietario -->
+                    <Label Text="Datos del Propietario" FontSize="Subtitle" HorizontalOptions="Center" Margin="25"/>
+
+                    <!-- Nombre del Propietario -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Nombre:" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="entryPropietario" BackgroundColor="WhiteSmoke" Placeholder="Ingrese el nombre" 
+            HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <!-- Teléfono -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Teléfono:" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="entryTelefono" BackgroundColor="WhiteSmoke" Keyboard="Numeric" MaxLength="10" 
+            Placeholder="Ingrese el número" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <!-- DUI -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="DUI:" VerticalOptions="Center" FontSize="Micro" TextColor="Black"/>
+                        <Entry x:Name="entryDUI" BackgroundColor="WhiteSmoke" Keyboard="Numeric" MaxLength="10" 
+            Placeholder="00000000-0" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <!-- Botón Guardar -->
+                    <Button Text="Guardar Mascota Hospitalizada" Clicked="GuardarMascota_Clicked" BackgroundColor="Salmon"
+        TextColor="Black" CornerRadius="10" Margin="0,20,0,0" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

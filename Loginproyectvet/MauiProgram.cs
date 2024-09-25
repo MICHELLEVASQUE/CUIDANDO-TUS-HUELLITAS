@@ -16,7 +16,11 @@ namespace Loginproyectvet
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Services.AddSingleton<LocalDbService>();
+            builder.Services.AddTransient<CitasProgramadas>();
+            builder.Services.AddTransient<Expedientes>();
+            builder.Services.AddTransient<Hospitalizacion>();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

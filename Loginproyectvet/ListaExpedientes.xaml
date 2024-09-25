@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.ListaExpedientes"
+             Title="ListaExpedientes">
+    <StackLayout Padding="10">
+        <ListView x:Name="listview" ItemTapped="listview_ItemTapped" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BorderColor="LightGray" CornerRadius="10" Padding="10" Margin="5" BackgroundColor="White">
+                            <StackLayout>
+                                <!-- Nombre del Propietario -->
+                                <Label x:Name="LabelNombre" Text="{Binding NombrePropietario}" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+
+                                <!-- Dirección -->
+                                <Label x:Name="labeldireccion" Text="{Binding Direccion}" FontSize="Small" TextColor="Gray"/>
+
+                                <!-- Teléfono y DUI -->
+                                <Label x:Name="labeltelefono" Text="{Binding Telefono, StringFormat='Tel: {0}'}" FontSize="Small" TextColor="Gray"/>
+                                <Label x:Name="labeldui" Text="{Binding DUI, StringFormat='DUI: {0}'}" FontSize="Small" TextColor="Gray"/>
+
+                                <!-- Información de la Mascota -->
+                                <Label x:Name="labelmascota" Text="{Binding MascotaNombre, StringFormat='Mascota: {0}'}" FontSize="Small" TextColor="Gray"/>
+                                <Label x:Name="labelespecie" Text="{Binding Especie, StringFormat='Especie: {0}'}" FontSize="Small" TextColor="Gray"/>
+                                <Label x:Name="labelraza" Text="{Binding Raza, StringFormat='Raza: {0}'}" FontSize="Small" TextColor="Gray"/>
+
+                                <!-- Estado de Hospitalización -->
+                                <Label x:Name="labelmf" Text="{Binding MF}" FontSize="Small" TextColor="Gray"/>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
