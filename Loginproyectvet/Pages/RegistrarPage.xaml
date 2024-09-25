@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.Pages.RegistrarPage"
+             Title="RegistrarPage">
+
+    <!-- Layout principal -->
+    <AbsoluteLayout  BackgroundColor="LightBlue" >
+
+        <!-- Path decorativo fuera del Grid (parte superior de la pantalla) -->
+        <Grid AbsoluteLayout.LayoutFlags="All"
+          AbsoluteLayout.LayoutBounds="0,0,1,0.25">
+            <Path Stroke="Aqua"
+              Data="m0.30001,0l449,0l0,128.48327c-122.5,64.30167 -332.5,65.89076 -449,7.2429c0,-45.25313 0,-90.47304 0,-135.72617z"
+              HeightRequest="200"
+              Fill="Salmon"
+              VerticalOptions="Start"
+              HorizontalOptions="FillAndExpand" 
+              />
+        </Grid >
+
+        <!-- Imagen del logo dentro de un Frame para bordes redondeados -->
+        <Frame CornerRadius="75"
+           
+           
+        HasShadow="True"
+           Padding="0"
+           BorderColor="White"
+           BackgroundColor="Transparent"
+           AbsoluteLayout.LayoutFlags="All"
+           AbsoluteLayout.LayoutBounds="0.5,0.15,0.4,0.9"
+           VerticalOptions="Start"
+           HorizontalOptions="Center">
+
+
+
+            <Image Source="inicio.png"
+               Aspect="AspectFill"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               
+               />
+        </Frame>
+
+        <!-- Frame con bordes redondeados que envuelve el Grid -->
+        <Frame CornerRadius="30"
+           Padding="0"
+           HasShadow="True"
+           BorderColor="Gray"
+           BackgroundColor="White"
+           AbsoluteLayout.LayoutFlags="All"
+           AbsoluteLayout.LayoutBounds="0.5,0.95,0.9,0.7"
+           >
+
+            <!-- Contenido principal en un Grid -->
+            <Grid Padding="20"
+          AbsoluteLayout.LayoutFlags="All"
+          AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.7"
+          Background="White"
+          >
+
+                <!-- Definición de Filas y Columnas -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Etiqueta de Usuario -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Entrada de Usuario -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Etiqueta de Contraseña -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Entrada de Contraseña -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Botón de Login -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Texto de Registro -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Botón de Registro -->
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <!-- Para ocupar todo el ancho -->
+                </Grid.ColumnDefinitions>
+
+                <!-- Etiqueta para Usuario -->
+                <Label Text="Usuario"
+               FontSize="Medium"
+               TextColor="Black"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalOptions="Start"
+                   Margin="10"/>
+
+                <!-- Entrada para Usuario con bordes redondeados -->
+                <Frame CornerRadius="20"
+               BackgroundColor="WhiteSmoke"
+               Padding="0"
+               Grid.Row="1"
+               Grid.Column="0"
+               HasShadow="False">
+                    <Entry x:Name="UsernameEntry"
+                   Placeholder="Digita tu usuario"
+                   BackgroundColor="Transparent"
+                   TextColor="Black"
+                   FontSize="Medium"
+                   HorizontalOptions="FillAndExpand"/>
+                </Frame>
+
+                <!-- Etiqueta para Contraseña -->
+                <Label Text="Contraseña"
+               FontSize="Medium"
+               TextColor="Black"
+               Grid.Row="2"
+               Grid.Column="0"
+               HorizontalOptions="Start"
+                   Margin="10"/>
+
+                <!-- Entrada para Contraseña con bordes redondeados -->
+                <Frame CornerRadius="20"
+               BackgroundColor="WhiteSmoke"
+               Padding="0"
+               Grid.Row="3"
+               Grid.Column="0"
+               HasShadow="False"
+                   >
+                    <Entry x:Name="PasswordEntry"
+                   Placeholder="Digita tu contraseña"
+                   IsPassword="True"
+                   BackgroundColor="Transparent"
+                   TextColor="Black"
+                   FontSize="Medium"
+                   HorizontalOptions="FillAndExpand"
+                       />
+                </Frame>
+
+               
+
+                <!-- Texto de registro -->
+                <Label Text="¿No tienes una cuenta? Regístrate aquí"
+               FontSize="Small"
+               TextColor="Gray"
+               Grid.Row="5"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+                   Margin="10"/>
+
+                <!-- Botón de Registro con bordes redondeados -->
+                <Button x:Name="OnRegister"
+                Text="Register"
+                BackgroundColor="Salmon"
+                TextColor="White"
+                FontSize="Medium"
+                Grid.Row="6"
+                Grid.Column="0"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="20"
+                Margin="0,10,0,0"
+                Clicked="OnRegister_Clicked"/>
+            </Grid>
+        </Frame>
+
+    </AbsoluteLayout>
+
+
+
+    <!--<StackLayout Padding="20">
+        <Label Text="Username" />
+        <Entry x:Name="UsernameEntry" Placeholder="Enter your username" />
+
+        <Label Text="Password" />
+        <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True" />
+
+        
+
+        <Button x:Name="OnRegister" Text="Registrarse" Clicked="OnRegister_Clicked" Margin="10"/>
+    </StackLayout>-->
+</ContentPage>

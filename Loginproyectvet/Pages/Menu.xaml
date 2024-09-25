@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.Pages.Menu"
+             Title="Menu">
+
+    <AbsoluteLayout>
+
+        <ScrollView BackgroundColor="LightBlue" 
+                AbsoluteLayout.LayoutFlags="All"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <StackLayout Padding="0" Spacing="15"
+                     VerticalOptions="Center" HorizontalOptions="Center" >
+
+                <Frame BackgroundColor="Transparent" BorderColor="Transparent"  >
+                    <!--<Label x:Name="labeljustufymenu"
+                Text="𝑫𝒐𝒏𝒅𝒆 𝒄𝒂𝒅𝒂 𝒉𝒖𝒆𝒍𝒍𝒊𝒕𝒂 𝒓𝒆𝒄𝒊𝒃𝒆 𝒂𝒎𝒐𝒓 𝒚 𝒄𝒖𝒊𝒅𝒂𝒅𝒐."
+                        Margin="10"
+                FontSize="20"
+                TextColor="Black"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                
+                        
+                        />-->
+                    <Image Source="bannerprueba1.png" WidthRequest="400" HeightRequest="300"/>
+                </Frame>
+
+
+                <Grid Padding="20" RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto, Auto, Auto, Auto">
+
+
+                    <!-- Frame 1 -->
+                    <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
+               WidthRequest="150" HeightRequest="150" Margin="10">
+                        <Image Source="citas.png" WidthRequest="150" HeightRequest="150"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" CommandParameter="Button 1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+                    <!-- Frame 2 -->
+                    <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
+                        WidthRequest="150" HeightRequest="150" Margin="10">
+                        <Image Source="registros.png" WidthRequest="150" HeightRequest="150"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <!-- Frame 3 -->
+                    <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
+                    WidthRequest="150" HeightRequest="150" Margin="10">
+                        <Image Source="hospitalizacion.png" WidthRequest="150" HeightRequest="150"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <!-- Frame 4 -->
+                    <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
+                    WidthRequest="150" HeightRequest="150" Margin="10">
+                        <Image Source="farmacia.png" WidthRequest="150" HeightRequest="150"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <!-- Frame 5 -->
+
+                    <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
+                    WidthRequest="150" HeightRequest="150" Margin="10">
+                        <Image Source="adopcion.png" WidthRequest="150" HeightRequest="150"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <!-- Frame 6 -->
+
+                    <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
+                     WidthRequest="150" HeightRequest="150" Margin="10">
+                        <Image 
+                        Source="donaciones.png" 
+                        WidthRequest="150" 
+                        HeightRequest="150"  />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+
+
+
+
+
+
+
+
+                </Grid>
+
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+        <!-- Imagen fija del perrito en la parte inferior -->
+        <!--<Image Source="mascota1.png"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+               AbsoluteLayout.LayoutBounds="0.,1,0.7,AutoSize"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Aspect="AspectFit"
+           WidthRequest="200"/>-->
+    </AbsoluteLayout>
+</ContentPage>
