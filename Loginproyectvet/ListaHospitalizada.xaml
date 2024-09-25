@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.ListaHospitalizada"
+             Title="ListaHospitalizada">
+    <ListView x:Name="listview" ItemTapped="listview_ItemTapped" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Margin="10" Padding="10" BorderColor="Gray" CornerRadius="10" HasShadow="True">
+                        <StackLayout Orientation="Vertical" Spacing="5">
+
+                            <!-- Nombre de la Mascota -->
+                            <Label Text="{Binding Nombre}" 
+                           FontAttributes="Bold" 
+                           FontSize="Medium" 
+                           TextColor="#00796B" />
+
+                            <!-- Especie y Raza -->
+                            <Label Text="{Binding Especie}" 
+                           FontSize="Small" 
+                           TextColor="Gray" />
+                            <Label Text="{Binding Raza}" 
+                           FontSize="Small" 
+                           TextColor="Gray" />
+
+                            <!-- Edad y Peso -->
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="Edad:" 
+                               FontSize="Small" 
+                               FontAttributes="Bold" />
+                                <Label Text="{Binding Edad}" 
+                               FontSize="Small" />
+                                <Label Text="Peso:" 
+                               FontSize="Small" 
+                               FontAttributes="Bold" />
+                                <Label Text="{Binding Peso}" 
+                               FontSize="Small" />
+                            </StackLayout>
+
+                            <!-- Estado de Hospitalización -->
+                            <Label Text="{Binding EstadoHospitalizacion}" 
+                           FontSize="Small" 
+                           TextColor="Red" />
+
+                        </StackLayout>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
