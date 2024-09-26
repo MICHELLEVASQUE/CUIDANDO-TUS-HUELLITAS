@@ -71,6 +71,9 @@
 	  <MauiXaml Update="CitasProgramadas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Donacion.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Expedientes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -92,7 +95,10 @@
 	  <MauiXaml Update="ListaCitas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+ ParteEmily
 	  <MauiXaml Update="ListaCompras.xaml">
+	  <MauiXaml Update="ListaDonar.xaml">
+ master
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ListaExpedientes.xaml">
