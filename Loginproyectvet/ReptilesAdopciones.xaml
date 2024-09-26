@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.ReptilesAdopciones"
+             Title="ReptilesAdopciones">
+    <ScrollView Padding="0" BackgroundColor="LightBlue">
+
+        <StackLayout>
+            <Image Source="adopciones.png" Aspect="AspectFit" />
+            <Label Text="REPTILES" HorizontalOptions="CenterAndExpand" FontSize="Small" FontAttributes="Bold"
+                BackgroundColor="Salmon"
+                HorizontalTextAlignment="Center"
+                WidthRequest="200"
+                VerticalOptions="CenterAndExpand"
+                Margin="5"
+                TextColor="Black" Padding="0"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+
+                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="190" HeightRequest="400" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="pancho.jpeg" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Nills" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Tortuga de 3 meses de nacida, linda, juguetona y le gustan las lechugas." FontSize="Micro"  TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="ADOPTAR" Clicked="Button_Clicked"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                             FontAttributes="Bold" HorizontalOptions="Center" 
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" CornerRadius="10" Margin="10" Padding="0" HasShadow="True" WidthRequest="190" HeightRequest="400" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="isa.jpeg" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Isa" FontSize="Small" FontAttributes="Bold"  TextColor="White"  />
+                        <Label Text=" Iguana Hembra, 6 mese de edad, le gusta tomar mucho sol." FontSize="Micro" FontAttributes="Bold" TextColor="Black" />
+                        <Button Text="ADOPTAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold" 
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" CornerRadius="10" Padding="0" HasShadow="True" Margin="10" 
+                    WidthRequest="190" HeightRequest="400"
+                    BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="leo.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="LEO" FontSize="Small" FontAttributes="Bold"  TextColor="White"  />
+                        <Label Text="Cameleón de 1 año de edad, le gusta jugar a las escondidas." FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="ADOPTAR" Clicked="Button_Clicked_2"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold"
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" CornerRadius="10" 
+                    WidthRequest="190" HeightRequest="400"
+                    Padding="0" HasShadow="True" Margin="10" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="djsnake.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="DJSNAKE" FontSize="Small" FontAttributes="Bold" TextColor="White" />
+                        <Label Text="3 meses de edad, puesta en adopcion por problemas personales." FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="ADOPTAR" Clicked="Button_Clicked_3"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold" 
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

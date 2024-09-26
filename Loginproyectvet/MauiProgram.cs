@@ -20,8 +20,13 @@ namespace Loginproyectvet
             builder.Services.AddTransient<CitasProgramadas>();
             builder.Services.AddTransient<Expedientes>();
             builder.Services.AddTransient<Hospitalizacion>();
+ ParteEmily
+            builder.Services.AddTransient<FormCompras>();
+            builder.Services.AddTransient<FormAdopciones>();
+
             builder.Services.AddTransient<Donacion>();
             builder.Services.AddTransient<ListaDonar>();
+ master
             builder.Logging.AddDebug();
 #endif
 
