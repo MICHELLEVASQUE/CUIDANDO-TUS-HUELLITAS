@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.Opcion3"
+             Title="Opcion3">
+
+    <ScrollView Padding="0" BackgroundColor="LightBlue">
+        <StackLayout>
+            <Image Source="medicar.png" Aspect="AspectFit" />
+
+            <Label Text="ACCESORIOS Y MAS..." HorizontalOptions="CenterAndExpand" FontSize="Small" FontAttributes="Bold"
+               BackgroundColor="Salmon"
+               HorizontalTextAlignment="Center"
+               WidthRequest="300"
+               VerticalOptions="CenterAndExpand"
+               Margin="5"
+               TextColor="Black" Padding="0"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+
+                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="accesorio1.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Comedero" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Color rosa, para agua y comida." FontSize="Micro"   TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                            FontAttributes="Bold" HorizontalOptions="Center" 
+                            VerticalOptions="Center" FontSize="Micro"
+                            WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="accesorio2.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Pechera" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Para perros, color rosa." FontSize="Micro"   TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                            FontAttributes="Bold" HorizontalOptions="Center" 
+                            VerticalOptions="Center" FontSize="Micro"
+                            WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="accesorio3.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Pechera" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Para Perros,color anaranjada. " FontSize="Micro"   TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                            FontAttributes="Bold" HorizontalOptions="Center" 
+                            VerticalOptions="Center" FontSize="Micro"
+                            WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="accesorio4.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Collares" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Para Perros, tres colores." FontSize="Micro"  TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                            FontAttributes="Bold" HorizontalOptions="Center" 
+                            VerticalOptions="Center" FontSize="Micro"
+                            WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="accesorio5.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Porta Gatos" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Celeste, muy espaciosa" FontSize="Micro"   TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                            FontAttributes="Bold" HorizontalOptions="Center" 
+                            VerticalOptions="Center" FontSize="Micro"
+                            WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="1" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="accesorio6.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Juguetes" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Para Gatos, tres colores." FontSize="Micro"   TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                            FontAttributes="Bold" HorizontalOptions="Center" 
+                            VerticalOptions="Center" FontSize="Micro"
+                            WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

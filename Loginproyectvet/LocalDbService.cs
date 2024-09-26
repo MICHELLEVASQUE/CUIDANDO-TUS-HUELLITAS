@@ -20,8 +20,8 @@ namespace Loginproyectvet
             _connection.CreateTableAsync<Citas>();
             _connection.CreateTableAsync<Registro>();
             _connection.CreateTableAsync<MascotaHospitalizada>();
-
-
+            _connection.CreateTableAsync<CompraProductos>();
+            _connection.CreateTableAsync<RegistroAdopciones>();
         }
 
         public async Task<List<Registro>> GetRegistros()
@@ -93,6 +93,58 @@ namespace Loginproyectvet
         public async Task Delete(MascotaHospitalizada mascotaHospitalizada)
         {
             await _connection.DeleteAsync(mascotaHospitalizada);
+        }
+
+        //MEDICAMENTOS
+
+        public async Task<List<CompraProductos>> GetCompraProductos()
+        {
+            return await _connection.Table<CompraProductos>().ToListAsync();
+        }
+        public async Task<CompraProductos> GetCompraProductosById(int id)
+        {
+            return await _connection.Table<CompraProductos>().Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task Create(CompraProductos compraProductos)
+        {
+            await _connection.InsertAsync(compraProductos);
+        }
+
+        public async Task Update(CompraProductos compraProductos)
+        {
+            await _connection.UpdateAsync(compraProductos);
+        }
+
+        public async Task Delete(CompraProductos compraProductos)
+        {
+            await _connection.DeleteAsync(compraProductos);
+        }
+
+        //ADOPCIONES
+
+        public async Task<List<RegistroAdopciones>> GetRegistroAdopciones()
+        {
+            return await _connection.Table<RegistroAdopciones>().ToListAsync();
+        }
+        public async Task<RegistroAdopciones> GetRegistroAdopcionesById(int id)
+        {
+            return await _connection.Table<RegistroAdopciones>().Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task Create(RegistroAdopciones registroAdopciones)
+        {
+            await _connection.InsertAsync(registroAdopciones);
+        }
+
+        public async Task Update(RegistroAdopciones registroAdopciones)
+        {
+            await _connection.UpdateAsync(registroAdopciones);
+        }
+
+        public async Task Delete(RegistroAdopciones registroAdopciones)
+        {
+            await _connection.DeleteAsync(registroAdopciones);
         }
     }
 }
