@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.ListaDonar"
+             Title="ListaDonar">
+    <ListView x:Name="listview" ItemTapped="listview_ItemTapped" HasUnevenRows="True" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Margin="10" Padding="10" BorderColor="Gray" CornerRadius="10" HasShadow="True">
+                        <StackLayout Orientation="Vertical" Spacing="5">
+
+                            <!-- Nombre de la Mascota -->
+                            <Label Text="{Binding NombreFundacion}" 
+                        FontAttributes="Bold" 
+                        FontSize="Medium" 
+                        TextColor="#00796B" />
+
+                            <!-- Especie y Raza -->
+                            <Label Text="{Binding CuentaActual}" 
+                        FontSize="Small" 
+                        TextColor="Gray" />
+
+
+                            <!-- Edad y Peso -->
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="Dui:" 
+                            FontSize="Small" 
+                            FontAttributes="Bold" />
+                                <Label Text="{Binding DUI}" 
+                            FontSize="Small"  TextColor="Black" />
+                                <Label Text="Direccion:" 
+                            FontSize="Small" 
+                            FontAttributes="Bold" />
+                                <Label Text="{Binding Direccion}" 
+                            FontSize="Small"  TextColor="Black" />
+                            </StackLayout>
+
+                            <!-- Estado de Hospitalización -->
+                            <Label Text="{Binding Cantidad}" 
+                        FontSize="Small" 
+                        TextColor="Red"/>
+
+                        </StackLayout>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

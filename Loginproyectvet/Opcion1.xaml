@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.Opcion1"
+             Title="Opcion1">
+
+    <ScrollView Padding="0" BackgroundColor="LightBlue">
+
+        <StackLayout>
+            <Image Source="medicar.png" Aspect="AspectFit" />
+
+            <Label Text="VITAMINAS" HorizontalOptions="CenterAndExpand" FontSize="Title" FontAttributes="Bold"
+                BackgroundColor="Salmon"
+                HorizontalTextAlignment="Center"
+                WidthRequest="200"
+                VerticalOptions="CenterAndExpand"
+                Margin="5"
+                TextColor="Black" Padding="0"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+
+                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+                    <VerticalStackLayout Padding="10">
+                        <Image Source="vitamina1.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Dog Relaxante" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Desparacitante, para Perros, " FontSize="Micro"   TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_1"  BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5" 
+                             FontAttributes="Bold" HorizontalOptions="Center" 
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" CornerRadius="10" Margin="10" Padding="0" HasShadow="True" WidthRequest="180" HeightRequest="350" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="10">
+                        <Image Source="vitamina2.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Cat Relaxante" FontSize="Small" FontAttributes="Bold" TextColor="White"  />
+                        <Label Text="Desparacitante para gatos." FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_2" BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold" 
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" CornerRadius="10" Padding="0" HasShadow="True" Margin="10" 
+                    WidthRequest="180" HeightRequest="350"
+                    BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="vitaminas3.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Viterma" FontSize="20" FontAttributes="Bold"  TextColor="White"  />
+                        <Label Text="Desparacitante, para Perros." FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_2" BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold"
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" CornerRadius="10" 
+                    WidthRequest="180" HeightRequest="350"
+                    Padding="0" HasShadow="True" Margin="10" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="vitaminas4.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Vitamina K+C" FontSize="Small" FontAttributes="Bold"  TextColor="White"  />
+                        <Label Text="Desparacitante, para Perros, " FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_2" BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold" 
+                             VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="0" BorderColor="Black" CornerRadius="10" 
+                      WidthRequest="180" HeightRequest="350" Padding="0" HasShadow="True" Margin="10" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="vitaminas5.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="CalviPet" FontSize="Small" FontAttributes="Bold" />
+                        <Label Text="Desparacitante, para Perros, " FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_2" BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold" 
+                            VerticalOptions="Center" FontSize="Micro"
+                             WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="1" BorderColor="Black" CornerRadius="10" 
+                      WidthRequest="180" HeightRequest="350" Padding="0" HasShadow="True" Margin="10" BackgroundColor="Salmon">
+
+                    <VerticalStackLayout Padding="15">
+                        <Image Source="vitaminas6.png" Aspect="AspectFit" HeightRequest="200"/>
+
+                        <Label Text="Complemil" FontSize="Small" FontAttributes="Bold" />
+                        <Label Text="Desparacitante, para Perros, " FontSize="Micro" FontAttributes="Bold" TextColor="Black"/>
+                        <Button Text="COMPRAR" Clicked="Button_Clicked_2" BackgroundColor="LightBlue" TextColor="Black" CornerRadius="5"  FontAttributes="Bold" 
+                                                VerticalOptions="Center" FontSize="Micro"
+                         WidthRequest="150" HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.FormAdopciones"
+             Title="FormAdopciones">
+
+    <ScrollView BackgroundColor="LightBlue">
+        <StackLayout Padding="5">
+            <Image Source="adopciones.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+            <Frame BorderColor="White" CornerRadius="10" Padding="5" Margin="5" HasShadow="True" BackgroundColor="White">
+                <StackLayout Padding="10" Spacing="10">
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Nombre del Solicitante:" TextColor="Black" FontSize="Micro" FontAttributes="Bold"
+                            Margin="10" Grid.Row="0" Grid.Column="0" />
+                        <Entry x:Name="EntryNomAdop" 
+                            Placeholder="Ingrese su nombre" 
+                            TextChanged="EntryNomAdop_TextChanged"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" 
+                            FontSize="Micro"
+                            BackgroundColor="WhiteSmoke"
+                            WidthRequest="330"
+                            Grid.Row="0" Grid.Column="1" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Apellido del Solicitante:" TextColor="Black" FontSize="Micro" FontAttributes="Bold"
+                            Margin="10" Grid.Row="1" Grid.Column="0" />
+                        <Entry x:Name="EntryApellidoAdop" 
+                            Placeholder="Ingrese su apellido" 
+                            TextChanged="EntryApellidoAdop_TextChanged"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" 
+                            FontSize="Micro"
+                            BackgroundColor="WhiteSmoke"
+                            WidthRequest="300"
+                            Grid.Row="1" Grid.Column="1" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text=" Cantidad de Salario:" TextColor="Black" FontSize="Micro" FontAttributes="Bold"
+                            Margin="10" Grid.Row="1" Grid.Column="0" />
+                        <Entry x:Name="EntrySalarioAdop" 
+                            Placeholder="Ingrese su salario" 
+                            TextChanged="EntrySalarioAdop_TextChanged"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" 
+                            FontSize="Micro"
+                            BackgroundColor="WhiteSmoke"
+                            HeightRequest="40"
+                            WidthRequest="300"
+                            Grid.Row="1" Grid.Column="1" />
+                    </StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Dirección del solicitante:" TextColor="Black" FontSize="Micro" FontAttributes="Bold"
+                            Margin="10" Grid.Row="1" Grid.Column="0" />
+                        <Entry x:Name="EntryDirecionAdop" 
+                            Placeholder="Ingrese su direccion" 
+                            TextChanged="EntryDirecionAdop_TextChanged"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" 
+                            FontSize="Micro"
+                            BackgroundColor="WhiteSmoke"
+                            HeightRequest="40"
+                            WidthRequest="300"
+                            Grid.Row="1" Grid.Column="1" />
+                    </StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Telefono del solicitante:" TextColor="Black" FontSize="Micro" FontAttributes="Bold"
+                            Margin="10" Grid.Row="1" Grid.Column="0" />
+                        <Entry x:Name="EntryTellAdop" 
+                            Placeholder="Ingrese su Telefono" 
+                            TextChanged="EntryTellAdop_TextChanged"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" 
+                            FontSize="Micro"
+                            BackgroundColor="WhiteSmoke"
+                            HeightRequest="40"
+                            WidthRequest="300"
+                            Grid.Row="1" Grid.Column="1" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Especie a Adoptar:" TextColor="Black" FontSize="Micro" FontAttributes="Bold"
+                            Margin="10" Grid.Row="2" Grid.Column="0" />
+
+                        <Picker x:Name="pickerEspecie"
+                             Grid.Row="2" Grid.Column="1"
+                             BackgroundColor="WhiteSmoke"
+                             FontSize="Micro"
+                             WidthRequest="150"
+                             HorizontalTextAlignment="Center"
+                             HorizontalOptions="FillAndExpand"
+                             TextColor="Black" >
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>CANINOS</x:String>
+                                    <x:String>FELINOS</x:String>
+                                    <x:String>REPTILES</x:String>
+                                    <x:String>OTROS</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Button Text="ADOPTAR" Clicked="Button_Clicked" 
+                                         FontAttributes="Bold" FontSize="Small" 
+                                         Grid.Row="3" Grid.Column="1" WidthRequest="200"
+                                         HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                                         Margin="10" BackgroundColor="Salmon" TextColor="Black" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Image Source="adoptame.png"
+                    WidthRequest="300"
+                    HeightRequest="200"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

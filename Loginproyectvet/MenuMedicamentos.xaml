@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.MenuMedicamentos"
+             Title="MenuMedicamentos">
+    
+    <Grid BackgroundColor="Salmon">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="MenuButton"
+        Text="🐾"
+        TextColor="Black"
+        FontSize="30"
+        WidthRequest="80"
+        HeightRequest="70"
+        HorizontalOptions="Start"
+        VerticalOptions="Start"
+        Clicked="MenuButton_Clicked"
+        BackgroundColor="LightBlue"/>
+
+        <Frame Padding="10"
+           x:Name="Menupanel"
+       BackgroundColor="LightBlue"
+       BorderColor="White"
+       CornerRadius="10"
+       HasShadow="True"
+       IsVisible="False"
+       WidthRequest="240"
+       VerticalOptions="FillAndExpand"
+       Grid.Column="0">
+
+            <StackLayout>
+                <Button x:Name="Menubutton"
+                Text="🐾"
+                TextColor="Black"
+                FontSize="30"
+                WidthRequest="80"
+                HeightRequest="70"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Clicked="Menubutton_Clicked_1"
+                BackgroundColor="Salmon"/>
+
+                <Label Text="CATEGORIAS"
+               FontAttributes="Bold"
+               FontSize="Small"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               Margin="30"/>
+
+                <Button x:Name="Categoria"
+                Text="VITAMINAS"
+                CommandParameter="Categorias"
+                TextColor="Black"
+                FontSize="20"
+                BorderWidth="2"
+                BorderColor="White"
+                WidthRequest="200"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="Categoria_Clicked"
+                FontAttributes="Bold"
+                Margin="10"
+                BackgroundColor="Salmon"/>
+
+                <Button x:Name="Opcion1"
+                Text="DESPARACITANTES"
+                CommandParameter="Categorias"
+                TextColor="Black"
+                FontSize="14"
+                BorderWidth="2"
+                BorderColor="White"
+                WidthRequest="200"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="Opcion1_Clicked"
+                Margin="10"
+                BackgroundColor="Salmon"/>
+
+                <Button x:Name="Opcion2"
+                Text="OTROS"
+                CommandParameter="Categorias"
+                TextColor="Black"
+                FontSize="20"
+                BorderWidth="2"
+                BorderColor="White"
+                WidthRequest="200"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="Opcion2_Clicked"
+                BackgroundColor="Salmon"
+                Margin="10"/>
+
+                <Image Source="doctor.png"
+                   WidthRequest="300"
+                   HeightRequest="200"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Frame>
+
+        <ContentView x:Name="ContentFrame" BackgroundColor="Salmon" Grid.Column="1"/>
+
+        <StackLayout Grid.Column="1">
+            <Label Text="Farmacia"
+               Margin="10"
+           FontSize="30"
+           FontAttributes="Bold"
+           TextColor="White"
+           HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="veterinaria.png"
+           WidthRequest="600"
+           HeightRequest="500"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
