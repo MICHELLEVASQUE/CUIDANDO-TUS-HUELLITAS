@@ -38,7 +38,7 @@ public partial class Menu : ContentPage
 
     private async void donaciones_Tapped(object sender, TappedEventArgs e)
     {
-       
+        await Navigation.PushAsync(new Donacion(_dbService));
     }
 }
 
