@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginproyectvet.ListaCompras"
+             Title="ListaCompras">
+
+    <ListView x:Name="listview" ItemTapped="listview_ItemTapped" HasUnevenRows="True" BackgroundColor="LightBlue">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Margin="10" Padding="10" BorderColor="Black" CornerRadius="10" HasShadow="True" Background="White">
+                        <StackLayout Orientation="Vertical" Spacing="5">
+
+                            <StackLayout  Orientation="Horizontal" Spacing="10">
+                                <Label Text="Nombre:" 
+                              FontSize="Small" 
+                              VerticalTextAlignment="Center"
+                              FontAttributes="Bold"
+                              TextColor="Green"/>
+                                <Label Text= "{Binding Nombre }" 
+                              FontSize="Small" 
+                              TextColor="Black" />
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Horizontal" Spacing="10">
+                                <Label Text="Apellido:" 
+                              FontSize="Small" 
+                              FontAttributes="Bold" 
+                              TextColor="Green"/>
+                                <Label Text="{Binding Apellido}" 
+                              FontSize="Small" 
+                              TextColor="Black" />
+                            </StackLayout>
+
+
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="Cantidad:" 
+                              FontSize="Small" 
+                              FontAttributes="Bold" 
+                              TextColor="Red"/>
+                                <Label Text="{Binding Cantidad}" 
+                              FontSize="Small"
+                              TextColor="Black"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10" >
+                                <Label Text="precio:" 
+                             FontSize="Small" 
+                             FontAttributes="Bold"
+                             TextColor="Red"/>
+                                <Label Text="{Binding Precio}" 
+                             FontSize="Small"
+                             TextColor="Black"/>
+                            </StackLayout>
+
+
+                            <StackLayout  Orientation="Horizontal" Spacing="10">
+                                <Label Text="Total:" 
+                              FontSize="Small" 
+                              FontAttributes="Bold" 
+                              TextColor="red"/>
+                                <Label Text="{Binding Total}" 
+                              FontSize="Small" 
+                              TextColor="Black" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

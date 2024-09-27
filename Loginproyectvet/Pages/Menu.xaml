@@ -36,8 +36,8 @@
                     <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="LightBlue" BorderColor="LightBlue" CornerRadius="20" Padding="10" HasShadow="True" 
                WidthRequest="150" HeightRequest="150" Margin="10">
                         <Image Source="citas.png" WidthRequest="150" HeightRequest="150"/>
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" CommandParameter="Button 1"/>
+                        <Frame.GestureRecognizers >
+                            <TapGestureRecognizer x:Name="citas" Tapped="citas_Tapped" CommandParameter="Button 1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
 
@@ -46,7 +46,7 @@
                         WidthRequest="150" HeightRequest="150" Margin="10">
                         <Image Source="registros.png" WidthRequest="150" HeightRequest="150"/>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                            <TapGestureRecognizer x:Name="Registros" Tapped="Registros_Tapped" CommandParameter="Button 1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
                     <!-- Frame 3 -->
@@ -54,7 +54,7 @@
                     WidthRequest="150" HeightRequest="150" Margin="10">
                         <Image Source="hospitalizacion.png" WidthRequest="150" HeightRequest="150"/>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                            <TapGestureRecognizer  x:Name="hospitalizacion" Tapped="hospitalizacion_Tapped"  CommandParameter="Button 1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
                     <!-- Frame 4 -->
@@ -62,7 +62,7 @@
                     WidthRequest="150" HeightRequest="150" Margin="10">
                         <Image Source="farmacia.png" WidthRequest="150" HeightRequest="150"/>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                            <TapGestureRecognizer x:Name="farmacia" Tapped="farmacia_Tapped"  CommandParameter="Button 1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
                     <!-- Frame 5 -->
@@ -71,7 +71,7 @@
                     WidthRequest="150" HeightRequest="150" Margin="10">
                         <Image Source="adopcion.png" WidthRequest="150" HeightRequest="150"/>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                            <TapGestureRecognizer x:Name="adopciones" Tapped="adopciones_Tapped"  CommandParameter="Button 1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
                     <!-- Frame 6 -->
@@ -83,7 +83,7 @@
                         WidthRequest="150" 
                         HeightRequest="150"  />
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" CommandParameter="Button 1"/>
+                            <TapGestureRecognizer x:Name="donaciones" Tapped="donaciones_Tapped" CommandParameter="Button 1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
 
