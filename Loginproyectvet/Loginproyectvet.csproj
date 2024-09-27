@@ -96,6 +96,8 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ListaCompras.xaml">
+	   <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ListaDonar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
