@@ -30,7 +30,7 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="190" HeightRequest="400" BackgroundColor="Salmon">
+                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="400" BackgroundColor="Salmon">
 
                     <VerticalStackLayout Padding="15">
                         <Image Source="queso.png" Aspect="AspectFit" HeightRequest="200"/>
@@ -44,7 +44,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" CornerRadius="10" Margin="10" Padding="0" HasShadow="True" WidthRequest="190" HeightRequest="400" BackgroundColor="Salmon">
+                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" CornerRadius="10" Margin="10" Padding="0" HasShadow="True" WidthRequest="180" HeightRequest="400" BackgroundColor="Salmon">
 
                     <VerticalStackLayout Padding="15">
                         <Image Source="tambor.png" Aspect="AspectFit" HeightRequest="200"/>
@@ -57,7 +57,7 @@
                     </VerticalStackLayout>
                 </Frame>
                 <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" CornerRadius="10" Padding="0" HasShadow="True" Margin="10" 
-                    WidthRequest="190" HeightRequest="400"
+                    WidthRequest="180" HeightRequest="400"
                     BackgroundColor="Salmon">
 
                     <VerticalStackLayout Padding="15">

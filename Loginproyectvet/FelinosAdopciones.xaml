@@ -30,9 +30,9 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="190" HeightRequest="400" BackgroundColor="Salmon">
+                <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Margin="10" CornerRadius="10" Padding="0"  HasShadow="True" WidthRequest="180" HeightRequest="400" BackgroundColor="Salmon">
 
-                    <VerticalStackLayout Padding="15">
+                    <VerticalStackLayout Padding="20">
                         <Image Source="tigris.png" Aspect="AspectFit" HeightRequest="200"/>
 
                         <Label Text="TIGRIS" FontSize="Small" FontAttributes="Bold" TextColor="White"/>
@@ -44,9 +44,9 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" CornerRadius="10" Margin="10" Padding="0" HasShadow="True" WidthRequest="190" HeightRequest="400" BackgroundColor="Salmon">
+                <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" CornerRadius="10" Margin="10" Padding="0" HasShadow="True" WidthRequest="180" HeightRequest="400" BackgroundColor="Salmon">
 
-                    <VerticalStackLayout Padding="15">
+                    <VerticalStackLayout Padding="20">
                         <Image Source="princesa.png" Aspect="AspectFit" HeightRequest="200"/>
 
                         <Label Text="PRINCESA" FontSize="Small" FontAttributes="Bold"  TextColor="White"  />
@@ -57,10 +57,10 @@
                     </VerticalStackLayout>
                 </Frame>
                 <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" CornerRadius="10" Padding="0" HasShadow="True" Margin="10" 
-                    WidthRequest="190" HeightRequest="400"
+                    WidthRequest="180" HeightRequest="400"
                     BackgroundColor="Salmon">
 
-                    <VerticalStackLayout Padding="15">
+                    <VerticalStackLayout Padding="20">
                         <Image Source="capo.png" Aspect="AspectFit" HeightRequest="200"/>
 
                         <Label Text="CAPO" FontSize="Small" FontAttributes="Bold" TextColor="White"  />
@@ -72,10 +72,10 @@
                 </Frame>
 
                 <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" CornerRadius="10" 
-                    WidthRequest="190" HeightRequest="400"
+                    WidthRequest="180" HeightRequest="400"
                     Padding="0" HasShadow="True" Margin="10" BackgroundColor="Salmon">
 
-                    <VerticalStackLayout Padding="15">
+                    <VerticalStackLayout Padding="20">
                         <Image Source="salem.jpeg" Aspect="AspectFit" HeightRequest="200"/>
 
                         <Label Text="SALEM" FontSize="Small" FontAttributes="Bold"  TextColor="White" />
