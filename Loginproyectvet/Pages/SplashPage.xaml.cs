@@ -2,7 +2,8 @@ namespace Loginproyectvet.Pages;
 
 public partial class SplashPage : ContentPage
 {
-	public SplashPage()
+    private readonly LocalDbService _dbService;
+    public SplashPage(LocalDbService dbService)
 	{
 		InitializeComponent();
         StartSplashScreenTimer();
@@ -11,9 +12,9 @@ public partial class SplashPage : ContentPage
     {
         // Esperar 5 segundos
         await Task.Delay(10000);
-        
+
         // Navegar a la página de inicio de sesión (LoginPage)
-        await Navigation.PushAsync(new LoginPage());
+        await Navigation.PushAsync(new LoginPage(_dbService));
 
         // Eliminar la SplashPage de la pila de navegación
         Navigation.RemovePage(this);

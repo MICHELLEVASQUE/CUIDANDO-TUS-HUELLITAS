@@ -4,8 +4,9 @@ namespace Loginproyectvet.Pages;
 
 public partial class RegistrarPage : ContentPage
 {
+    private readonly LocalDbService _dbService;
     private UserDatabase _userDatabase;
-    public RegistrarPage()
+    public RegistrarPage(LocalDbService dbService)
 	{
 		InitializeComponent();
         _userDatabase = new UserDatabase();
@@ -36,6 +37,6 @@ public partial class RegistrarPage : ContentPage
         await _userDatabase.SaveUserAsync(user);
         await DisplayAlert("Success", "User registered successfully!", "OK");
 
-        await Navigation.PushAsync(new LoginPage());
+        await Navigation.PushAsync(new LoginPage(_dbService));
     }
 }

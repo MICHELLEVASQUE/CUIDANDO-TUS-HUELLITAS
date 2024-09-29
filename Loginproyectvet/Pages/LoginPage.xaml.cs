@@ -4,10 +4,11 @@ namespace Loginproyectvet.Pages;
 
 public partial class LoginPage : ContentPage
 {
+    private readonly LocalDbService _dbService;
     private UserDatabase _userDatabase;
     private UserDatabase userDatabase;
 
-    public LoginPage()
+    public LoginPage(LocalDbService dbService)
 	{
 		InitializeComponent();
         
@@ -37,7 +38,7 @@ public partial class LoginPage : ContentPage
             await DisplayAlert("Success", "Login successful!", "OK");
             // Navega a la página principal de la app si el login es exitoso
 
-            await Navigation.PushAsync(new Menu());
+            await Navigation.PushAsync(new Menu(_dbService));
         }
         else
         {
@@ -49,7 +50,7 @@ public partial class LoginPage : ContentPage
     private async void OnRegister_Clicked(object sender, EventArgs e)
     {
 
-        await Navigation.PushAsync(new RegistrarPage());
+        await Navigation.PushAsync(new RegistrarPage(_dbService));
 
     }
 

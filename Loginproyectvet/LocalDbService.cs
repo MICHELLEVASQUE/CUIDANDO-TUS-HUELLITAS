@@ -20,14 +20,14 @@ namespace Loginproyectvet
             _connection.CreateTableAsync<Citas>();
             _connection.CreateTableAsync<Registro>();
             _connection.CreateTableAsync<MascotaHospitalizada>();
- ParteEmily
+
             _connection.CreateTableAsync<CompraProductos>();
             _connection.CreateTableAsync<RegistroAdopciones>();
 
             _connection.CreateTableAsync<Donar>();
 
  
- master
+ 
         }
 
         public async Task<List<Registro>> GetRegistros()
@@ -100,7 +100,6 @@ namespace Loginproyectvet
         {
             await _connection.DeleteAsync(mascotaHospitalizada);
         }
- ParteEmily
 
         //MEDICAMENTOS
 
@@ -152,7 +151,8 @@ namespace Loginproyectvet
         public async Task Delete(RegistroAdopciones registroAdopciones)
         {
             await _connection.DeleteAsync(registroAdopciones);
-=======
+        }
+
         public async Task<List<Donar>> GetDonar()
         {
             return await _connection.Table<Donar>().ToListAsync();
@@ -175,7 +175,6 @@ namespace Loginproyectvet
         public async Task Delete(Donar donar)
         {
             await _connection.DeleteAsync(donar);
- master
         }
     }
 }
