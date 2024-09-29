@@ -63,6 +63,7 @@ public partial class FormAdopciones : ContentPage
                 Telefono = EntryTellAdop.Text,
 
             });
+            await DisplayAlert("Éxito", "Se guardado correctamente,gracias por querer a un mejor amigo en tu vida,cuidalo mucho y amalo", "Aceptar");
         }
         else
         {
@@ -77,6 +78,8 @@ public partial class FormAdopciones : ContentPage
                 Telefono = EntryTellAdop.Text,
 
             });
+            await DisplayAlert("Éxito", "La información ha sido actualizada correctamente.", "Aceptar");
+
 
             _editFormAdopcionesId = 0;
         }

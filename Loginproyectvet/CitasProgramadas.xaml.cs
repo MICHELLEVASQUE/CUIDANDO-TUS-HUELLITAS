@@ -77,7 +77,7 @@ public partial class CitasProgramadas : ContentPage
                 MascotaNombre = EntryMascotaNombre.Text,
                 FechaHora = fechaHora
             });
-            await DisplayAlert("Éxito", "La información de la mascota ha sido actualizada correctamente.", "Aceptar");
+            await DisplayAlert("Éxito", "La información ha sido actualizada correctamente.", "Aceptar");
             _editCitaId = 0;
         }
 

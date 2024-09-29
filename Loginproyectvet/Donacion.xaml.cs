@@ -45,6 +45,8 @@ public partial class Donacion : ContentPage
                 Cantidad = entryCantidad.Text,
 
             });
+
+            await DisplayAlert("Éxito", "Se guardado correctamente, gracias por su linda donacion", "Aceptar");
         }
         else
         {
@@ -61,7 +63,7 @@ public partial class Donacion : ContentPage
 
 
             });
-
+            await DisplayAlert("Éxito", "La información ha sido actualizada correctamente.", "Aceptar");
             _editDonarId = 0;
         }
         // Limpiar los campos

@@ -141,7 +141,7 @@
 
                 <!-- Botón de Login con bordes redondeados -->
                 <Button x:Name="OnLogin"
-                    Text="Login"
+                    Text="Inicio sesion"
                     BackgroundColor="Salmon"
                     TextColor="White"
                     FontSize="Medium"
@@ -165,7 +165,7 @@
 
                 <!-- Botón de Registro con bordes redondeados -->
                 <Button x:Name="OnRegister"
-                    Text="Register"
+                    Text="Registrarse"
                     BackgroundColor="Salmon"
                     TextColor="White"
                     FontSize="Medium"

@@ -146,7 +146,7 @@
 
                 <!-- Botón de Registro con bordes redondeados -->
                 <Button x:Name="OnRegister"
-                Text="Register"
+                Text="Registrarse"
                 BackgroundColor="Salmon"
                 TextColor="White"
                 FontSize="Medium"

@@ -32,12 +32,7 @@ public partial class Hospitalizacion : ContentPage
     private async void GuardarMascota_Clicked(object sender, EventArgs e)
     {
 
-        bool isEdadValid = int.TryParse(entryEdad.Text, out int edad);
-        if (!isEdadValid)
-        {
-            await DisplayAlert("Error", "La edad debe ser un número entero válido.", "Aceptar");
-            return;
-        }
+      
 
         // Convertir Peso a double
         bool isPesoValid = double.TryParse(entryPeso.Text, System.Globalization.NumberStyles.AllowDecimalPoint,
@@ -93,7 +88,7 @@ public partial class Hospitalizacion : ContentPage
 
 
             });
-            await DisplayAlert("Éxito", "La información de la mascota ha sido actualizada correctamente.", "Aceptar");
+            await DisplayAlert("Éxito", "La información ha sido actualizada correctamente.", "Aceptar");
 
             _editHospitalizacionId = 0;
         }

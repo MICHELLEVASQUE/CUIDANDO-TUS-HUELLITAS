@@ -158,6 +158,8 @@ public partial class FormCompras : ContentPage
 
 
             });
+
+            await DisplayAlert("Éxito", "Se guardado correctamente,en unos momentos nos comunicaremoss con usted para darle mas informacion", "Aceptar");
         }
         else
         {
@@ -174,6 +176,7 @@ public partial class FormCompras : ContentPage
                 Direccion = EntryEntrega.Text,
                 Telefono = Entrytel.Text,
             });
+            await DisplayAlert("Éxito", "La información ha sido actualizada correctamente.", "Aceptar");
 
             _editFormComprasId = 0;
         }

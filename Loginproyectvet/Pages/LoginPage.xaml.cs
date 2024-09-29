@@ -35,14 +35,14 @@ public partial class LoginPage : ContentPage
         var user = await _userDatabase.GetUserAsync(username, password);
         if (user != null)
         {
-            await DisplayAlert("Success", "Login successful!", "OK");
+            await DisplayAlert("¡Inicio de sesion exitoso!", "Disfruta de nuestros servicios hacia tus patitas", "OK");
             // Navega a la página principal de la app si el login es exitoso
 
             await Navigation.PushAsync(new Menu(_dbService));
         }
         else
         {
-            await DisplayAlert("Error", "Invalid username or password", "OK");
+            await DisplayAlert("Error", "Nombre de usuario o contraseña no son validos", "OK");
         }
 
     }

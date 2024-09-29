@@ -6,17 +6,11 @@ public partial class SplashPage : ContentPage
     public SplashPage(LocalDbService dbService)
 	{
 		InitializeComponent();
-        StartSplashScreenTimer();
+     
     }
-    private async void StartSplashScreenTimer()
+
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-        // Esperar 5 segundos
-        await Task.Delay(10000);
-
-        // Navegar a la página de inicio de sesión (LoginPage)
         await Navigation.PushAsync(new LoginPage(_dbService));
-
-        // Eliminar la SplashPage de la pila de navegación
-        Navigation.RemovePage(this);
     }
 }

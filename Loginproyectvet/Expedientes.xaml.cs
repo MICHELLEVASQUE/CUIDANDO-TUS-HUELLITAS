@@ -80,7 +80,7 @@ public partial class Expedientes : ContentPage
                 MF = pickerSexo.SelectedItem.ToString()
 
             });
-            await DisplayAlert("Éxito", "La información de la mascota ha sido actualizada correctamente.", "Aceptar");
+            await DisplayAlert("Éxito", "La información ha sido actualizada correctamente.", "Aceptar");
 
             _editExpedienteId = 0;
         }

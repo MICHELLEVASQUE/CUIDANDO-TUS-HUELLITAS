@@ -24,7 +24,7 @@ public partial class RegistrarPage : ContentPage
 
         if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
         {
-            await DisplayAlert("Error", "Please fill in all fields", "OK");
+            await DisplayAlert("Error", "Por favor,rellene todos los campos", "OK");
             return;
         }
 
@@ -35,7 +35,7 @@ public partial class RegistrarPage : ContentPage
         };
 
         await _userDatabase.SaveUserAsync(user);
-        await DisplayAlert("Success", "User registered successfully!", "OK");
+        await DisplayAlert("¡Registro Exitoso!","Ya tiene una cuenta para que ingreses a nuestra app", "OK");
 
         await Navigation.PushAsync(new LoginPage(_dbService));
     }
