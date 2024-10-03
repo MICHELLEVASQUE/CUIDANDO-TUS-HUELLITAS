@@ -6,6 +6,7 @@ public partial class SplashPage : ContentPage
     public SplashPage(LocalDbService dbService)
 	{
 		InitializeComponent();
+        _dbService = dbService;
      
     }
 

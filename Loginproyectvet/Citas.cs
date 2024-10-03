@@ -15,19 +15,19 @@ namespace Loginproyectvet
         public int Id { get; set; }
 
         [Column("Direccion")]
-        public string Direccion { get; set; }
+        public string? Direccion { get; set; }
 
         [Column("Telefono")]
-        public string Telefono { get; set; }
+        public string? Telefono { get; set; }
 
         [Column("PropietarioNombre")]
-        public string PropietarioNombre { get; set; }
+        public string? PropietarioNombre { get; set; }
 
         [Column("DUI")]
-        public string DUI { get; set; }
+        public string? DUI { get; set; }
 
         [Column("MascotaNombre")]
-        public string MascotaNombre { get; set; }
+        public string? MascotaNombre { get; set; }
 
         [Column("FechaHora")]
         public DateTime FechaHora { get; set; }

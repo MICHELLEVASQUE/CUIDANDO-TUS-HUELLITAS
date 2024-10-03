@@ -94,7 +94,7 @@ public partial class FormAdopciones : ContentPage
         await Navigation.PushAsync(new ListaAdopciones(_dbService));
     }
 
-    private async void EntrySalarioAdop_TextChanged(object sender, TextChangedEventArgs e)
+    private  void EntrySalarioAdop_TextChanged(object sender, TextChangedEventArgs e)
     {
 
     }
@@ -118,5 +118,5 @@ public partial class FormAdopciones : ContentPage
 
 public class Especies
 {
-    public string nombre { get; set; }
+    public string? nombre { get; set; }
 }

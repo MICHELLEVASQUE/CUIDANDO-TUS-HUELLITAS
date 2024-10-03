@@ -16,31 +16,31 @@ namespace Loginproyectvet
         public int Id { get; set; }
 
         [Column("Nombre")]
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
 
         [Column("Especie")]
-        public string Especie { get; set; }
+        public string? Especie { get; set; }
 
         [Column("Raza")]
-        public string Raza { get; set; }
+        public string? Raza { get; set; }
 
         [Column("Edad")]
-        public string Edad { get; set; }
+        public string? Edad { get; set; }
 
         [Column("Peso")]
-        public string Peso { get; set; }
+        public string? Peso { get; set; }
 
         [Column("Propietario")]
-        public string Propietario { get; set; }
+        public string? Propietario { get; set; }
 
         [Column("DUI")]
-        public string DUI { get; set; }
+        public string? DUI { get; set; }
 
         [Column("Telefono")]
-        public string Telefono { get; set; }
+        public string? Telefono { get; set; }
 
 
         [Column("EstadoHospitalizacion")]
-        public string EstadoHospitalizacion { get; set; }
+        public string? EstadoHospitalizacion { get; set; }
     }
 }

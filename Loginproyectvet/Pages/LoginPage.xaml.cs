@@ -6,25 +6,19 @@ public partial class LoginPage : ContentPage
 {
     private readonly LocalDbService _dbService;
     private UserDatabase _userDatabase;
-    private UserDatabase userDatabase;
 
     public LoginPage(LocalDbService dbService)
 	{
 		InitializeComponent();
         
         _userDatabase = new UserDatabase();
-
-        
-
-
-
-
+        _dbService = dbService;
 
     }
 
     public LoginPage(UserDatabase userDatabase)
     {
-        this.userDatabase = userDatabase;
+        this._userDatabase = userDatabase;
     }
 
     private async void OnLogin_Clicked(object sender, EventArgs e)

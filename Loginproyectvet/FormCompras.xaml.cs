@@ -2,8 +2,8 @@ namespace Loginproyectvet;
 
 public partial class FormCompras : ContentPage
 {
-    private List<Productos> _productos;
-    private Productos _selectedProduct;
+    private List<Productos>? _productos;
+    private Productos? _selectedProduct;
 
     private readonly LocalDbService _dbService;
     private int _editFormComprasId;
@@ -196,6 +196,6 @@ public partial class FormCompras : ContentPage
 }
 public class Productos
 {
-    public string nombre { get; set; }
+    public string? nombre { get; set; }
     public double precio { get; set; }
 }

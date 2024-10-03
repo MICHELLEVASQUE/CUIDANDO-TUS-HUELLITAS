@@ -10,6 +10,7 @@ public partial class RegistrarPage : ContentPage
 	{
 		InitializeComponent();
         _userDatabase = new UserDatabase();
+        _dbService = dbService;
     }
 
     private async void Regresar_Clicked(object sender, EventArgs e)
